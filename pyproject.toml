@@ -1,0 +1,17 @@
+[project]
+name = "pypatterns"
+version = "0.1.0"
+description = "A collection of notes on patterns and concepts in DSA and ML."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.3",
+    "pandas>=3.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "ipython>=9.10.0",
+    "matplotlib>=3.10.8",
+]
