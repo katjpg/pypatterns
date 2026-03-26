@@ -15,4 +15,5 @@ dev = [
     "ipykernel>=7.2.0",
     "ipython>=9.10.0",
     "matplotlib>=3.10.8",
+    "ruff>=0.15.7",
 ]
