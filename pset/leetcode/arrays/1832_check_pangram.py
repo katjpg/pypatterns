@@ -7,6 +7,7 @@ class Solution:
                 return True
         return False
 
+
 """ 
 time: O(n)
 - iterate each n character in sentence.

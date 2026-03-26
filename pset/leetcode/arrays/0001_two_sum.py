@@ -1,4 +1,4 @@
-class Solution: 
+class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         hashmap = {}
         for i, n in enumerate(nums):
@@ -6,8 +6,9 @@ class Solution:
             if diff in hashmap:
                 return [hashmap[diff], i]
             hashmap[n] = i
-        return [-1,1]
-        
+        return [-1, 1]
+
+
 """ 
 time: O(n)
 - iterate through array once.

@@ -3,7 +3,7 @@ class Solution:
         start, end = 0, len(s) - 1
         vowels = set("aeiouAEIOU")
         word = list(s)
-        
+
         while start < end:
             while start < end and word[start] not in vowels:
                 start += 1
@@ -14,9 +14,10 @@ class Solution:
             word[start], word[end] = word[end], word[start]
             start += 1
             end -= 1
-        
-        return ''.join(word)
-    
+
+        return "".join(word)
+
+
 """ 
 time: O(n)
 - two-pointer traversal via scanning string from both ends.

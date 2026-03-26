@@ -11,9 +11,15 @@ class Solution:
                 min_dist = min(min_dist, abs(i1 - i2))
         return min_dist
 
+
 """ 
-#TODO
-time: 
-space: 
+time: O(n)
+- single pass through wordsDict.
+- each word is checked once.
+- all operations inside the loop are O(1).
+
+space: O(1)
+- only stores the last seen indices and current minimum distance.
+- no extra data structure is used.
 
 """

@@ -4,25 +4,27 @@ class Solution:
         rows = [set() for _ in range(boardSize)]
         cols = [set() for _ in range(boardSize)]
         grids = [set() for _ in range(boardSize)]
-        
+
         for row in range(boardSize):
             for col in range(boardSize):
                 idx = board[row][col]
-                
+
                 if idx == ".":
                     continue
-                
+
                 grid_idx = (row // 3) * 3 + (col // 3)
                 grid = grids[grid_idx]
-                
+
                 if idx in (rows[row] | cols[col] | grid):
                     return False
-                
+
                 rows[row].add(idx)
                 cols[col].add(idx)
                 grid.add(idx)
-        
+
         return True
+
+
 """ 
 time: O(1)
 - boardSize is 9 x 9; constant num of cells
