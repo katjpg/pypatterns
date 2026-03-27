@@ -1,7 +1,7 @@
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         n = len(nums)
-        
+
         # condition 1 - if length of nums < 3, no triplet exists
         if n < 3:
             return []
@@ -10,8 +10,7 @@ class Solution:
         res = []
 
         for i in range(n - 2):
-            
-            # condition 2 - continue loop if start value has a duplicate 
+            # condition 2 - continue loop if start value has a duplicate
             if i > 0 and arr[i] == arr[i - 1]:
                 continue
 
@@ -36,7 +35,6 @@ class Solution:
 
                 # branch 4.3 - valid triplet found
                 else:
-                    
                     # add triplet to res[] list
                     res.append([arr[i], arr[left], arr[right]])
                     left += 1
@@ -51,8 +49,8 @@ class Solution:
                         right -= 1
 
         return res
-    
-    
+
+
 """
 time: O(n^2)
 - sorting takes O(n log n).
