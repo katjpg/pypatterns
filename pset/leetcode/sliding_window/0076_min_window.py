@@ -9,7 +9,7 @@ class Solution:
 
         have, need = 0, len(countT)
         window = {}
-        res, resLen = [-1, -1], float('inf')
+        res, resLen = [-1, -1], float("inf")
         left = 0
 
         for right in range(len(s)):
@@ -31,7 +31,8 @@ class Solution:
                 left += 1
 
         left, right = res
-        return s[left:right + 1] if resLen != float('inf') else ""
+        return s[left : right + 1] if resLen != float("inf") else ""
+
 
 """
 time: O(m + n)

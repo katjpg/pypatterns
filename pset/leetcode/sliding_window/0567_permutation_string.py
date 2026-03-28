@@ -27,6 +27,7 @@ class Solution:
 
         return False
 
+
 """
 time: O(n)
 - fixed-size window slides across s2, each char added/removed in O(1).

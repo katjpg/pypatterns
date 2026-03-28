@@ -12,6 +12,7 @@ class Solution:
 
         return maxProfit
 
+
 """
 time: O(n)
 - single pass through prices array.

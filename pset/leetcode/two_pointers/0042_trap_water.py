@@ -5,7 +5,6 @@ class Solution:
         units = 0
 
         while left < right:
-            
             # left is bottleneck, right wall guaranteed taller
             if leftMax < rightMax:
                 left += 1
@@ -19,6 +18,7 @@ class Solution:
                 units += rightMax - height[right]
 
         return units
+
 
 """
 time: O(n)
