@@ -11,10 +11,10 @@ class Solution:
             partX = (left + right) // 2
             partY = (m + n + 1) // 2 - partX
 
-            maxLeftX = nums1[partX - 1] if partX > 0 else float('-inf')
-            minRightX = nums1[partX] if partX < m else float('inf')
-            maxLeftY = nums2[partY - 1] if partY > 0 else float('-inf')
-            minRightY = nums2[partY] if partY < n else float('inf')
+            maxLeftX = nums1[partX - 1] if partX > 0 else float("-inf")
+            minRightX = nums1[partX] if partX < m else float("inf")
+            maxLeftY = nums2[partY - 1] if partY > 0 else float("-inf")
+            minRightY = nums2[partY] if partY < n else float("inf")
 
             # valid partition: left halves <= right halves
             if maxLeftX <= minRightY and maxLeftY <= minRightX:
@@ -27,6 +27,7 @@ class Solution:
                 left = partX + 1
 
         return 0.0
+
 
 """
 time: O(log(min(m, n)))

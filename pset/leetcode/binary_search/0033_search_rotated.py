@@ -23,6 +23,7 @@ class Solution:
 
         return -1
 
+
 """
 time: O(log n)
 - search interval 1/2 each iteration.

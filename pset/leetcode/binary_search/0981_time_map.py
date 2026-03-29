@@ -1,5 +1,4 @@
 class TimeMap:
-
     def __init__(self):
         self.store = {}
 
@@ -22,6 +21,7 @@ class TimeMap:
                 right = mid - 1
 
         return res
+
 
 """
 time:

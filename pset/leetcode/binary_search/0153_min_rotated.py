@@ -11,6 +11,7 @@ class Solution:
 
         return nums[left]
 
+
 """
 time: O(log n)
 - search interval 1/2 each iteration.

@@ -20,6 +20,7 @@ class Solution:
 
         return left
 
+
 """
 time: O(n * log M) where n = len(piles), M = max(piles)
 - binary search over k in [1, M]: log(M) iterations.
