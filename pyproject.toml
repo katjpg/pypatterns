@@ -1,7 +1,7 @@
 [project]
 name = "pypatterns"
 version = "0.1.0"
-description = "A collection of notes on patterns and concepts in DSA and ML."
+description = "A collection of notes on patterns and concepts in DSA, Data Science and ML."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
